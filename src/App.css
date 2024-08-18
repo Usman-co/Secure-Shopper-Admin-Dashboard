@@ -1,0 +1,349 @@
+/* Universal margin padding  */
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+/* Login form start */
+
+form{
+  margin-top: 50px;
+   background-color: #07292bfd;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  height: 320px;
+  width: 300px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 30px rgba(71, 223, 139, 0.986) , -3px 0px 30px rgba(1, 27, 10, 0.993);
+}
+
+form input{
+  margin: 15px 20px;
+  padding: 15px 35px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#btn{
+  padding: 10px 25px;
+  cursor: pointer;
+  border: rgb(247, 243, 243) 2px solid;
+  color: rgb(255, 255, 252);
+  background-color: #27f80fc9;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+/* Login form End */
+
+
+/* Menu Start */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: #dae5e6fd;
+  height: 100px;
+  /* margin-top: 30px; */
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+
+.logo{
+  margin-left: 30px;
+}
+
+ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+ul li{
+  margin-right:40px ;
+  font-size: 1.5rem;
+  
+}
+
+a{
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .productsItems {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  #cart-product-card {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  #btn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .cart-total-price {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Media Queries End */
+
+/* Menu End */
+
+
+/* Hero Section start  as Home */
+
+#Heading{
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+
+.productsItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 60%;
+  background-color: #07292bfd;
+  font-size: 1.3rem;
+}
+
+.card{
+  height: 400px;
+  width: 25%;
+  margin: 30px 38px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgb(253, 251, 250);
+  border: 1.4px solid black;
+  /* color: white; */
+}
+
+.card img{
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+}
+
+h4{
+  margin: 5px 0px;
+}
+
+.Add-to-cart{
+  padding: 10px 45px;
+  cursor: pointer;
+  border: rgb(26, 24, 24) 2px solid;
+  color: rgb(255, 255, 250);
+  background-color: #27f80fc9;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Add-to-cart:hover{
+  background-color:  #29c717c9;
+}
+
+/* Hero Section end  as Home */
+
+
+/* Cart Message start */
+
+.message{
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 10px 0px;
+  color: #110e0e;
+  font-family: 'Courier New', Courier, monospace;   
+}
+
+/* Cart Message End */
+
+
+/* Cart Products satrt */
+
+.cart-heading{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top:4px ;
+  padding-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace; 
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+#cart-products{
+  width: 80%;
+  background-color: #07292bfd;
+  color: rgb(253, 253, 253);
+  text-align: center; 
+  border-radius: 10px;
+  margin: 2% 10%;
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+#cart-products img{
+  height: auto;
+  width: 150px;
+  margin: 10px 0px;
+}
+
+#cart-product-card{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(247, 241, 241);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: 2% 4%;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+#cart-buttons{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  cursor: pointer;
+  color: rgb(255, 255, 252);
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+#decrement-button{
+  padding: 3px 25px;
+  cursor: pointer;
+  border: rgb(247, 243, 243) 2px solid;
+  color: rgb(255, 255, 252);
+  background-color: rgb(177, 22, 22);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#increment-button{
+  padding: 3px 25px;
+  cursor: pointer;
+  border: rgb(247, 243, 243) 2px solid;
+  color: rgb(255, 255, 252);
+  background-color: rgb(57, 180, 27);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition:  ease 0.6ms;
+}
+
+#decrement-button:hover{
+  background-color: rgb(245, 10, 10);
+transform: translateY(-5px);
+}
+
+#increment-button:hover{
+  background-color: rgb(55, 236, 9);
+  transform: translateY(-5px);
+  }
+
+.cart-total-price{
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  margin-top: 10px;
+  border-top: 2px solid black;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.clear-cart-bton{ 
+  padding: 10px 35px;
+  cursor: pointer;
+  border: rgb(247, 243, 243) 2px solid;
+  color: rgb(255, 255, 252);
+  background-color: red;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: end;
+}
+
+.cart-counter{
+margin: 3px;
+vertical-align: super;
+font-size: 14px;
+font-weight: 700;
+font-family: 'Courier New', Courier, monospace;
+color: white;
+}
+
+/* Cart Products End */
