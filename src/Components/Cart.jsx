@@ -17,7 +17,7 @@ const Cart = ({
         <div className="logo">Logo</div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/cart">
@@ -28,7 +28,7 @@ const Cart = ({
       </div>
       <div id="cart-products">
         <h3 className="cart-heading">Cart Items</h3>
-        
+
         {cartItems.length === 0 && (
           <div className="message">No product added to Cart</div>
         )}
@@ -38,12 +38,22 @@ const Cart = ({
               <img src={item.image} />
               <h3>{item.title}</h3>
               <div id="cart-buttons">
-              <div >
-                <button id="increment-button" onClick={() => handleAddProduct(item)}>+</button>
-              </div>
-              <div>
-                <button id="decrement-button" onClick={() => handleRemoveProduct(item)}>-</button>
-              </div>
+                <div>
+                  <button
+                    id="increment-button"
+                    onClick={() => handleAddProduct(item)}
+                  >
+                    +
+                  </button>
+                </div>
+                <div>
+                  <button
+                    id="decrement-button"
+                    onClick={() => handleRemoveProduct(item)}
+                  >
+                    -
+                  </button>
+                </div>
               </div>
               <h4>
                 {item.quantity}*${item.price}
@@ -53,7 +63,9 @@ const Cart = ({
         </div>
         <div className="clear-cart">
           {cartItems.length >= 1 && (
-            <button className="clear-cart-bton" onClick={handleClearCart}>Clear Cart</button>
+            <button className="clear-cart-bton" onClick={handleClearCart}>
+              Clear Cart
+            </button>
           )}
         </div>
         <div className="cart-total-price">

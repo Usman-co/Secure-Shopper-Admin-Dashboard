@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./Data";
-import {Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const Home = ({ handleAddProduct, cartItems }) => {
   const { products } = Data;
   return (
@@ -9,14 +9,14 @@ const Home = ({ handleAddProduct, cartItems }) => {
         <div className="logo">Logo</div>
         <ul>
           <li>
-            <Link to ="/">
-              Home
-            </Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
-            <Link to ="/cart">
-              <i className="fa-solid fa-cart-shopping"/>
-                <span className="cart-counter">{cartItems.length  === 0 ? "" : cartItems.length }</span>
+            <Link to="/cart">
+              <i className="fa-solid fa-cart-shopping" />
+              <span className="cart-counter">
+                {cartItems.length === 0 ? "" : cartItems.length}
+              </span>
             </Link>
           </li>
         </ul>

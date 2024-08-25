@@ -2,7 +2,7 @@ import "./App.css";
 import Loginform from "./Components/Login-form";
 import { Route, Routes } from "react-router";
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home";
 import Cart from "./Components/Cart";
 import Dashboard from "./Components/Dashboard";
@@ -46,9 +46,9 @@ function App() {
     }
   };
 
-  const handleClearCart = () =>{
-    setCartItems([])
-  }
+  const handleClearCart = () => {
+    setCartItems([]);
+  };
 
   return (
     <AuthProvider>
@@ -78,7 +78,7 @@ function App() {
               cartItems={cartItems}
               handleRemoveProduct={handleRemoveProduct}
               handleAddProduct={handleAddProduct}
-              handleClearCart ={handleClearCart}
+              handleClearCart={handleClearCart}
             />
           }
         />
